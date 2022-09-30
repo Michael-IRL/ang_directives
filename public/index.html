@@ -13,7 +13,10 @@
 <body ng-app="app">
     <div ng-controller="MainController">
         <h3>{{name}}</h3>
-        <div id="startDate" name="startDate" class="form-controlGroup-inputWrapper" custom-date-input ng-model="$root.startDate" custom-validation="startDateValidation"></div>
+
+        <div id="startDate" name="startDate" custom-date-input ng-model="startDate" custom-validation="startDateValidation"></div>
+
+        <div custom-number name="test" ng-model="mainNumber" custom-validation="numberValidation"></div>
     </div>
     
 
@@ -21,6 +24,7 @@
     <script src="./js/components/main/main.controller.js"></script>
     <script src="./js/directives/customDateInput/customDateInput.controller.js"></script>
     <script src="./js/directives/customDateInput/customDateInput.directive.js"></script>
+    <script src="./js/directives/customNumber/customNumber.directive.js"></script>
     <script src="./js/directives/customValidation/customValidation.directive.js"></script>
     <script src="./js/directives/customValidation/customValidator.factory.js"></script>
 </body>

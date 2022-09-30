@@ -60,10 +60,10 @@
 
     function customValidation() {    
         return {
-            terminal: true,
+            //terminal: true,
             restrict: 'A',
             require: 'ngModel',
-            priority: 0,
+            priority: 1,
             link: function ($scope, elem, attrs, ngModel) {
                 var validations = $scope.$eval(attrs.customValidation);
                 var triggers = [];

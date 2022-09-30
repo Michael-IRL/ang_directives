@@ -6,6 +6,7 @@
     'app.CustomValidatorFactory',
     'directive.customValidation',
     'directive.customDateInput',
+    'directive.customNumber',
     'app.main.controller',    
     ]);
 })()

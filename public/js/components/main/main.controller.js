@@ -4,6 +4,7 @@
   MainController.$inject = ['$scope','CustomValidatorFactory']
   function MainController($scope,customValidatorFactory){
     $scope.name = 'my name'
+    $scope.mainNumber = 2
 
     let numberValidation = customValidatorFactory.create(
       'numberValidation',
@@ -22,7 +23,7 @@
     $scope.startDateValidation = [startDateValidation]
 
     function numberValidationTrigger(){
-      return $scope.number
+      return $scope.mainNumber
     }
   
     function numberIsValid(value,elem){
